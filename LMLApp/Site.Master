@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="LMLApp.SiteMaster" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Styles/style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+        <div id="page-wrap">
+            <div id="outer-header">
+		        <div id="header">        
+			        <h1 class="logo"><a href="index.htm">My Logo</a></h1> 
+		        </div><!--End of header-->
+
+            </div><!--End of outer-header-->
+            <div id="outer-main-menu">
+                <div id="main-menu">
+				    <ul id="menu">
+                        <li>
+                	        <a href="#">My Account</a>
+                	        <ul>
+                                <li><a href="#">Change Password</a></li>
+                                <li><a href="#">Edit Profile</a></li>
+                                <li><a href="#">New Joining</a></li>                                
+               	 	        </ul>
+       			        </li>
+        		        <li>
+                	        <a href="#">All Doners</a>                	        
+       			        </li>        		        
+       			        <li><a href="#">Donet</a></li>
+        		        <li><a href="#">Donation</a></li>
+        		        <li><a href="#">Downline</a></li>
+                        <li><a href="#">Genar</a></li>
+                        <li><a href="#">Transfer</a></li>
+                        <li><a href="#">Withdraw</a></li>
+                        <li><a href="#">Income Report</a></li>
+                        <li><a href="#">Load Site</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Promo Agent</a></li>
+                        <li><a href="#">Promo Super Agent</a></li>
+                        <li><a href="#">Logout</a></li>
+			        </ul>
+			    </div><!--End of main-menu-->   
+            </div><!--End of outer-main-menu-->
+            <div id="outer-main">
+                <asp:ContentPlaceHolder ID="SidebarContent" runat="server">	
+                
+                </asp:ContentPlaceHolder> 
+		    <div id="main-content">            
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>    
+		    </div><!--End of main-content--> 
+        </div><!--End of outer-main-->
+	    <div style="clear:both;"></div>
+        <div id="outer-footer">
+            <div id="footer">		
+		        <div id="copy-right">Copyright &copy;2011 RELAX UK. All rights reserved.</div>
+	        </div>
+        </div>  
+    </div><!--End of page-wrap-->
+    </form>
+</body>
+</html>

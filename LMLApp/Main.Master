@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="LMLApp.Main" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Styles/style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+        <div id="page-wrap">
+            <div id="outer-header">
+		        <div id="header">        
+			        <h1 class="logo"><a href="index.htm">My Logo</a></h1> 
+		        </div><!--End of header-->
+            </div><!--End of outer-header-->
+            <div id="outer-main-menu">
+                <div id="main-menu">
+				    <ul id="menu">
+                        <li><a href="#" class="main-site-menu-li">Home</a></li>        		          		        
+       			        <li><a href="#" class="main-site-menu-li">About Us</a></li>
+        		        <li><a href="#" class="main-site-menu-li">Introduction</a></li>
+        		        <li><a href="#" class="main-site-menu-li">Country</a></li>
+                        <li><a href="#" class="main-site-menu-li">Our Mission</a></li>
+                        <li><a href="#" class="main-site-menu-li">Our Vision</a></li>
+                        <li><a href="#" class="main-site-menu-li">Contact Us</a></li>
+                        <li><a href="#" class="main-site-menu-li">F.A.Q</a></li>
+                        <li><a href="UI/RegisterUser.aspx" class="main-site-menu-li">Register</a>                                       
+                        
+                        </li>                         
+			        </ul>
+			    </div><!--End of main-menu-->   
+            </div><!--End of outer-main-menu-->
+            <div id="outer-main">             
+		        <div id="main-content">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                    </asp:ContentPlaceHolder>    
+		        </div><!--End of main-content--> 
+            </div><!--End of outer-main-->
+	    <div style="clear:both;"></div>
+        <div id="outer-footer">
+            <div id="footer">		
+		        <div id="copy-right">Copyright &copy;2011 MLM. All rights reserved.</div>
+	        </div>
+        </div>  
+    </div><!--End of page-wrap-->
+    </form>
+</body>
+</html>
+
