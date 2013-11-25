@@ -50,14 +50,22 @@
     <Reference Include="System.Web.ApplicationServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AboutUs.aspx" />
     <Content Include="Account\ChangePassword.aspx" />
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
+    <Content Include="ContactUs.aspx" />
+    <Content Include="Country.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="FAQ.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Images\bg.png" />
     <Content Include="Images\logo2.png" />
+    <Content Include="Introduction.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="OurMission.aspx" />
+    <Content Include="OurVision.aspx" />
     <Content Include="Styles\reset.css" />
     <Content Include="Styles\Site.css" />
     <Content Include="Global.asax" />
@@ -76,6 +84,12 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Account\ChangePassword.aspx.cs">
       <DependentUpon>ChangePassword.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -104,12 +118,30 @@
     <Compile Include="Account\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Country.aspx.cs">
+      <DependentUpon>Country.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Country.aspx.designer.cs">
+      <DependentUpon>Country.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FAQ.aspx.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FAQ.aspx.designer.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -120,6 +152,18 @@
     </Compile>
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Introduction.aspx.cs">
+      <DependentUpon>Introduction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Introduction.aspx.designer.cs">
+      <DependentUpon>Introduction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Main.Master.cs">
       <DependentUpon>Main.Master</DependentUpon>
@@ -149,6 +193,18 @@
     <Compile Include="MLMDAL\ProcessManager.cs" />
     <Compile Include="MLMDAL\SqlHelper.cs" />
     <Compile Include="MLMDAL\StoredProcedure.cs" />
+    <Compile Include="OurMission.aspx.cs">
+      <DependentUpon>OurMission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OurMission.aspx.designer.cs">
+      <DependentUpon>OurMission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OurVision.aspx.cs">
+      <DependentUpon>OurVision.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OurVision.aspx.designer.cs">
+      <DependentUpon>OurVision.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>

@@ -8,8 +8,7 @@
         <asp:TextBox ID="userNameTextBox" runat="server" Width="200px"></asp:TextBox>
         <asp:Label ID="lblPassword" runat="server" Text="Password" Width="150px" CssClass="label"></asp:Label>    
         <asp:TextBox ID="passwordTextBox" runat="server" TextMode="Password" Width="200px"></asp:TextBox>				
-        <asp:Button ID="btnLogin" runat="server" Text="Login" 
-            style="width:100px;margin-left: 165px;" onclick="btnLogin_Click"/> 
+        <asp:Button ID="btnLogin" runat="server" Text="Login" style="width:100px;margin-left: 165px;"/> 
         <br style="clear: both;"/>
         <ul id="login" style="margin-top: 5px;">                
             <li><asp:LinkButton ID="lbForget" runat="server">Forget Your Password</asp:LinkButton></li>				
